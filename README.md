@@ -1,5 +1,5 @@
 # Project-Entiny
-A own Scriptlanguage Project for Entities, Items and Effects for Minecraft
+A own Scriptlanguage Project for Entities, Items and Effects in Minecraft
 
 ### BNF for the Scriptlanguage
 
@@ -15,4 +15,4 @@ A own Scriptlanguage Project for Entities, Items and Effects for Minecraft
 \<numProduct\> ::= \<numLiteral\> { ( '*' | '/' | '%' ) \<numLiteral\> } <br>
 \<numLiteral\> ::= \<var\> | \<number\> | '(' \<numExpr\> ')'
   
-\<boolCond\> ::= \<numExpr\> ( '<' | '>' | '==' | '<=' | '>=' | '!=' ) \<numExpr\> 
+\<boolCond\> ::= \<numExpr\> ( '<' | '>' | '==' | '<=' | '>=' | '!=' ) \<numExpr\> [ ( '&&' | '||' ) \<boolCond\> ]
