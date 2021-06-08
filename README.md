@@ -3,16 +3,16 @@ A own Scriptlanguage Project for Entities, Items and Effects for Minecraft
 
 ### BNF for the Scriptlanguage
 
-<block> ::= '{' {<statement>+} '}'
-<statement> ::= <if> | <while> | <block> | <print> | <assignment>
+\<block\> ::= '{' {\<statement\>+} '}' <br>
+\<statement\> ::= \<if\> | \<while\> | \<block\> | \<print\> | \<assignment\>
 
-<if> ::= if '(' <boolCond> ')' <statement> [ else <statement> ]
-<while> ::= while '(' <boolCond> ')' <statement>
-<assignment> ::= <var> '=' <numExpr> ';'
-<print> ::= print <var> ';'
+\<if\> ::= if '(' \<boolCond\> ')' \<statement\> [ else \<statement\> ] <br>
+\<while\> ::= while '(' \<boolCond\> ')' \<statement\> <br>
+\<assignment\> ::= \<var\> '=' \<numExpr\> ';' <br>
+\<print\> ::= print \<var\> ';' <br>
 
-<numExpr> ::= <numProduct> { ( '+' | '-' ) <numProduct> }
-<numProduct> ::= <numLiteral> { ( '*' | '/' | '%' ) <numLiteral> }
-<numLiteral> ::= <var> | <number> | '(' <numExpr> ')'
+\<numExpr\> ::= \<numProduct\> { ( '+' | '-' ) \<numProduct\> } <br>
+\<numProduct\> ::= \<numLiteral\> { ( '*' | '/' | '%' ) \<numLiteral\> } <br>
+\<numLiteral\> ::= \<var\> | \<number\> | '(' \<numExpr\> ')'
   
-<boolCond> ::= <numExpr> ( '<' | '>' | '==' | '<=' | '>=' | '!=' ) <numExpr> 
+\<boolCond\> ::= \<numExpr\> ( '<' | '>' | '==' | '<=' | '>=' | '!=' ) \<numExpr\> 
